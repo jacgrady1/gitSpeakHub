@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -14,26 +15,27 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
 
+
     <!-- Web Fonts -->
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static "plugins/bootstrap/css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
 
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets/css/headers/header-default.css">
-    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+    <link rel="stylesheet" href="{% static "css/headers/header-default.css"%}">
+    <link rel="stylesheet" href="{% static "css/footers/footer-v1.css"%}">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/animate.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="{% static "plugins/animate.css"%}">
+    <link rel="stylesheet" href="{% static "plugins/line-icons/line-icons.css"%}">
+    <link rel="stylesheet" href="{% static "plugins/font-awesome/css/font-awesome.min.css"%}">
+    <link rel="stylesheet" href="{% static "plugins/parallax-slider/css/parallax-slider.css"%}">
+    <link rel="stylesheet" href="{% static "plugins/owl-carousel/owl-carousel/owl.carousel.css"%}">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="{% static "css/custom.css"%}">
 </head>	
 
 <body>
@@ -43,7 +45,7 @@
         <div class="container">
             <!-- Logo -->
             <a class="logo" href="index.html">
-                <img src="assets/img/logo1-default.png" alt="Logo">
+                <img src="{% static "img/logo1-default.png"%}" alt="Logo">
             </a>
             <!-- End Logo -->
             
@@ -104,13 +106,13 @@
                             <li class="dropdown-submenu">
                                 <a href="javascript:void(0);">Option 3: Shop UI</a>
                                 <ul class="dropdown-menu">
-                                    <li><a target="_blank" href="Shop-UI/index.html">- Home Page</a></li>
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-inner.html">- Product Page</a></li>
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-filter-grid.html">- Filter Grid Page</a></li>
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-filter-list.html">- Filter List Page</a></li>                   
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-add-to-cart.html">- Checkout Page</a></li>                            
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-login.html">- Login Page</a></li>                               
-                                    <li><a target="_blank" href="Shop-UI/shop-ui-register.html">- Registration Page</a></li>
+                                    <li><a target="_blank" href="{% static "Shop-UI/index.html"%}">- Home Page</a></li>
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-inner.html"%}">- Product Page</a></li>
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-filter-grid.html"%}">- Filter Grid Page</a></li>
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-filter-list.html"%}">- Filter List Page</a></li>                   
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-add-to-cart.html"%}">- Checkout Page</a></li>                            
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-login.html"%}">- Login Page</a></li>                               
+                                    <li><a target="_blank" href="{% static "Shop-UI/shop-ui-register.html"%}">- Registration Page</a></li>
                                 </ul>                                
                             </li>
                             <!-- End Shop UI -->
@@ -709,7 +711,7 @@
             <div class="da-slide">
                 <h2><i>CLEAN &amp; FRESH</i> <br /> <i>FULLY RESPONSIVE</i> <br /> <i>DESIGN</i></h2>
                 <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
-                <div class="da-img"><img class="img-responsive" src="assets/plugins/parallax-slider/img/1.png" alt=""></div>
+                <div class="da-img"><img class="img-responsive" src="{% static "plugins/parallax-slider/img/1.png"%}" alt=""></div>
             </div>
             <div class="da-slide">
                 <h2><i>RESPONSIVE VIDEO</i> <br /> <i>SUPPORT AND</i> <br /> <i>MANY MORE</i></h2>
@@ -721,7 +723,7 @@
             <div class="da-slide">
                 <h2><i>USING BEST WEB</i> <br /> <i>SOLUTIONS WITH</i> <br /> <i>HTML5/CSS3</i></h2>
                 <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
-                <div class="da-img"><img src="assets/plugins/parallax-slider/img/html5andcss3.png" alt="image01" /></div>
+                <div class="da-img"><img src="{% static "plugins/parallax-slider/img/html5andcss3.png"%}" alt="image01" /></div>
             </div>
             <div class="da-arrows">
                 <span class="da-arrows-prev"></span>
@@ -788,7 +790,7 @@
                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                 	<div class="thumbnail-img">
                         <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                            <img class="img-responsive" src="{% static "img/main/img1.jpg"%}" alt="">
                         </div>
                         <a class="btn-more hover-effect" href="#">read more +</a>					
                     </div>
@@ -802,7 +804,7 @@
                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                     <div class="thumbnail-img">
                         <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+                            <img class="img-responsive" src="{% static "img/main/img12.jpg"%}" alt="">
                         </div>
                         <a class="btn-more hover-effect" href="#">read more +</a>                   
                     </div>
@@ -816,7 +818,7 @@
                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                     <div class="thumbnail-img">
                         <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                            <img class="img-responsive" src="{% static "img/main/img3.jpg"%}" alt="">
                         </div>
                         <a class="btn-more hover-effect" href="#">read more +</a>                   
                     </div>
@@ -830,7 +832,7 @@
                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                     <div class="thumbnail-img">
                         <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/img17.jpg" alt="">
+                            <img class="img-responsive" src="{% static "img/main/img17.jpg"%}" alt="">
                         </div>
                         <a class="btn-more hover-effect" href="#">read more +</a>                   
                     </div>
@@ -850,7 +852,7 @@
     			<div class="headline"><h2>Welcome To Unify</h2></div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <img class="img-responsive margin-bottom-20" src="assets/img/main/img18.jpg" alt="">
+                        <img class="img-responsive margin-bottom-20" src="{% static "img/main/img18.jpg"%}" alt="">
                     </div>
                     <div class="col-sm-8">
                         <p>Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone.</p>
@@ -875,19 +877,19 @@
     			<div id="myCarousel" class="carousel slide carousel-v1">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="assets/img/main/img4.jpg" alt="">
+                            <img src="{% static "img/main/img4.jpg"%}" alt="">
                             <div class="carousel-caption">
                                 <p>Facilisis odio, dapibus ac justo acilisis gestinas.</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/main/img2.jpg" alt="">
+                            <img src="{% static "img/main/img2.jpg"%}" alt="">
                             <div class="carousel-caption">
                                 <p>Cras justo odio, dapibus ac facilisis into egestas.</p>
                             </div>
                             </div>
                         <div class="item">
-                            <img src="assets/img/main/img24.jpg" alt="">
+                            <img src="{% static "img/main/img24.jpg"%}" alt="">
                             <div class="carousel-caption">
                                 <p>Justo cras odio apibus ac afilisis lingestas de.</p>
                             </div>
@@ -911,31 +913,31 @@
         <div class="headline"><h2>Our Clients</h2></div>        
         <div class="owl-clients-v1">
             <div class="item">
-                <img src="assets/img/clients4/1.png" alt="">
+                <img src="{% static "img/clients4/1.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/2.png" alt="">
+                <img src="{% static "img/clients4/2.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/3.png" alt="">
+                <img src="{% static "img/clients4/3.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/4.png" alt="">
+                <img src="{% static "img/clients4/4.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/5.png" alt="">
+                <img src="{% static "img/clients4/5.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/6.png" alt="">
+                <img src="{% static "img/clients4/6.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/7.png" alt="">
+                <img src="{% static "img/clients4/7.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/8.png" alt="">
+                <img src="{% static "img/clients4/8.png"%}" alt="">
             </div>
             <div class="item">
-                <img src="assets/img/clients4/9.png" alt="">
+                <img src="{% static "img/clients4/9.png"%}" alt="">
             </div>
         </div>
         <!-- End Owl Clients v1 -->
@@ -949,7 +951,7 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="{% static "img/logo2-default.png"%}" alt=""></a>
                         <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
                         <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
                     </div><!--/col-md-3-->
@@ -1065,21 +1067,21 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->			
-<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static "plugins/jquery/jquery.min.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/jquery/jquery-migrate.min.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/bootstrap/js/bootstrap.min.js"%}"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="{% static "plugins/back-to-top.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/smoothScroll.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/parallax-slider/js/modernizr.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/parallax-slider/js/jquery.cslider.js"%}"></script>
+<script type="text/javascript" src="{% static "plugins/owl-carousel/owl-carousel/owl.carousel.js"%}"></script>
 <!-- JS Customization -->
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="{% static "js/custom.js"%}"></script>
 <!-- JS Page Level -->           
-<script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
-<script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
+<script type="text/javascript" src="{% static "js/app.js"%}"></script>
+<script type="text/javascript" src="{% static "js/plugins/owl-carousel.js"%}"></script>
+<script type="text/javascript" src="{% static "js/plugins/parallax-slider.js"%}"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
       	App.init();
