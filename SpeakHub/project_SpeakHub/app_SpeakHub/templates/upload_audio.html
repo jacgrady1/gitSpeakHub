@@ -1,0 +1,71 @@
+{% extends "base_index.html" %}
+{% load staticfiles %}
+{% block content %}
+    
+    <div class="container">
+        <br/>
+        <!-- Start Info Unit -->
+        <!-- End Info Unit -->
+        
+        
+        <div class="row-fluid" >
+            <div class="span9 main-section" height="800">
+                
+                <!-- Start Left Section -->
+                
+                <div class="row-fluid" height="800">
+                    
+                    
+                    
+                    <div >
+                        <!-- <div class="thumbnail"> -->
+                        
+                        <div class="thumbnail" height="800">
+                            
+                            <div class="wrapper" height="800">
+                                {% for error in form.non_field_errors %}
+                                    <p style="color: red">
+                                        {{ error }}
+                                    </p>
+                                {% endfor %}
+                                
+                                <!-- Upload form. Note enctype attribute! -->
+                                <form action="/home/upload" method="post" enctype="multipart/form-data" padding = "200" position="center"  height="800">
+                                    {% csrf_token %}
+                                    <table>
+                                        {% for field in form.visible_fields %}
+                                            <tr>
+                                                <td>{{field.label_tag}}</td>
+                                                <td>{{field}}</td>
+                                                <td>{{field.errors}}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    </table>
+                                    
+                                    <br/>
+                                    <p><input class="btn btn-primary" type="submit" value="Upload Video" /></p>
+                                </form>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            <!-- End Left Section -->
+            <!-- Start Right Section -->
+            <div id="side-section" class="span3">
+                
+                
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+{% endblock %}

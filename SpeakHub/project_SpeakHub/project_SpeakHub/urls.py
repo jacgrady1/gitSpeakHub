@@ -26,4 +26,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home/', include('app_SpeakHub.urls')),
     url(r'^$', include('app_SpeakHub.urls')),
+
 )

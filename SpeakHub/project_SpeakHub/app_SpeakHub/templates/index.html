@@ -1,381 +1,8 @@
+{% extends "base_index.html" %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
-<head>
-    <title>Unify - Responsive Website Template</title>
+{% block content %}
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-
-
-    <!-- Web Fonts -->
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="{% static "plugins/bootstrap/css/bootstrap.min.css"%}">
-    <link rel="stylesheet" href="{% static "css/style.css"%}">
-
-    <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="{% static "css/headers/header-default.css"%}">
-    <link rel="stylesheet" href="{% static "css/footers/footer-v1.css"%}">
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{% static "plugins/animate.css"%}">
-    <link rel="stylesheet" href="{% static "plugins/line-icons/line-icons.css"%}">
-    <link rel="stylesheet" href="{% static "plugins/font-awesome/css/font-awesome.min.css"%}">
-    <link rel="stylesheet" href="{% static "plugins/parallax-slider/css/parallax-slider.css"%}">
-    <link rel="stylesheet" href="{% static "plugins/owl-carousel/owl-carousel/owl.carousel.css"%}">
-
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="{% static "css/custom.css"%}">
-</head>	
-
-<body>
-<div class="wrapper">
-    <!--=== Header ===-->    
-    <div class="header">
-        <div class="container">
-            <!-- Logo -->
-            <a class="logo" href="index.html">
-                <img src="{% static "img/logo1-default.png"%}" alt="Logo">
-            </a>
-            <!-- End Logo -->
-            
-            <!-- Topbar -->
-            <div class="topbar">
-                <ul class="loginbar pull-right">
-                    <li class="hoverSelector">
-                        <i class="fa fa-globe"></i>
-                        <a>语言</a>
-                        <ul class="languages hoverSelectorBlock">
-                            <li class="active">
-                                <a href="#">中文 <i class="fa fa-check"></i></a> 
-                            </li>
-                            <li><a href="#">英文</a></li>
-                        </ul>
-                    </li> 
-                    <li class="topbar-devider"></li>   
-                    <li><a href="page_login.html">登录</a></li>   
-                </ul>
-            </div>
-            <!-- End Topbar -->
-
-            <!-- Toggle get grouped for better mobile display -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="fa fa-bars"></span>
-            </button>
-            <!-- End Toggle -->
-        </div><!--/end container-->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-            <div class="container">
-                <ul class="nav navbar-nav">
-                    <!-- Home -->
-                    <li >
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            主页
-                        </a>
-                        
-                    </li>
-                    <!-- End Home -->
-
-                    <!-- Pages -->                        
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            语言培训
-                        </a>
-                        <ul class="dropdown-menu">
-                    
-                            <!-- Invoice Page -->
-                            <li><a href="page_invoice.html">Invoice Page</a></li>
-                            <!-- End Invoice Page -->
-
-                            <!-- Clients Page -->
-                            <li><a href="page_clients.html">Clients Page</a></li>
-                            <!-- End Clients Page -->
-
-                            <!-- Column Pages -->
-                            <li><a href="page_3_columns.html">Three Columns Page</a></li>
-                            <!-- End Column Pages -->
-
-                            <!-- Privacy Policy -->
-                            <li><a href="page_privacy.html">Privacy Policy</a></li>
-                            <!-- End Privacy Policy -->
-
-                            <!-- Terms of Service -->
-                            <li><a href="page_terms.html">Terms of Service</a></li>
-                            <!-- End Terms of Service -->
-
-                            <!-- Sub Level Menu -->
-                            <li class="dropdown-submenu">
-                                <a href="javascript:void(0);">Sub Level 1</a>
-                                <ul class="dropdown-menu no-bottom-space">
-                                    <li><a href="index.hmtl">Sub Level 2</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a href="javascript:void(0);">Sub Level 2</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                        </ul>                                
-                                    </li>
-                                    <li><a href="index.hmtl">Sub Level 2</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a href="javascript:void(0);">Sub Level 2</a>
-                                        <ul class="dropdown-menu no-bottom-space">
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                            <li><a href="index.hmtl">Sub Level 3</a></li>
-                                        </ul>                                
-                                    </li>
-                                </ul>                                
-                            </li>                            
-                            <!-- End Sub Level Menu -->
-                        </ul>
-                    </li>
-                    <!-- End Pages -->
-
-                    <!-- Blog -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            留学服务
-                        </a>
-                        <ul class="dropdown-menu">
-                            
-                            <li><a href="blog_masonry_3col.html">Masonry Grid Blog</a></li>
-                            <li><a href="blog_timeline.html">Blog Timeline</a></li>                            
-                        </ul>
-                    </li>
-                    <!-- End Blog -->
-
-                    <!-- Portfolio -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            学员故事
-                        </a>
-                        <ul class="dropdown-menu">
-                            
-                            <li><a href="portfolio_hover_colors.html">Portfolio Hover Colors</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="javascript:void(0);">Portfolio Items</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="portfolio_single_item.html">Single Item</a></li>
-                                    <li><a href="portfolio_old_item.html">Basic Item 1</a></li>
-                                    <li><a href="portfolio_old_item1.html">Basic Item 2</a></li>
-                                </ul>                                
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a href="javascript:void(0);">Portfolio Basic Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="portfolio_old_text_blocks.html">Basic Grid Text</a></li>
-                                    <li><a href="portfolio_old_2_column.html">Basic 2 Columns</a></li>
-                                    <li><a href="portfolio_old_3_column.html">Basic 3 Columns</a></li>
-                                    <li><a href="portfolio_old_4_column.html">Basic 4 Columns</a></li>
-                                </ul>                                
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- End Portfolio -->
-
-                    <!-- Features -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            考题考经
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a href="javascript:void(0);">Headers</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="feature_header_default.html">Header Default</a></li>
-                                    <li><a href="feature_header_v1.html">Header v1</a></li>
-                                    <li><a href="feature_header_v2.html">Header v2</a></li>
-                                    <li><a href="feature_header_v3.html">Header v3</a></li>
-                                    <li><a href="feature_header_v4.html">Header v4</a></li>
-                                    <li><a href="feature_header_v5.html">Header v5</a></li>
-                                    <li><a href="feature_header_v6_transparent.html">Header v6 Transparent</a></li>
-                                    <li><a href="feature_header_v6_semi_dark_transparent.html">Header v6 Dark Transparent</a></li>
-                                    <li><a href="feature_header_v6_semi_white_transparent.html">Header v6 White Transparent</a></li>
-                                    <li><a href="feature_header_v6_border_bottom.html">Header v6 Border Bottom</a></li>
-                                    <li><a href="feature_header_v6_classic_dark.html">Header v6 Classic Dark</a></li>
-                                    <li><a href="feature_header_v6_classic_white.html">Header v6 Classic White</a></li>
-                                    <li><a href="feature_header_v6_dark_dropdown.html">Header v6 Dark Dropdown</a></li>
-                                    <li><a href="feature_header_v6_dark_scroll.html">Header v6 Dark on Scroll</a></li>
-                                    <li><a href="feature_header_v6_dark_search.html">Header v6 Dark Search</a></li>
-                                    <li><a href="feature_header_v6_dark_res_nav.html">Header v6 Dark in Responsive</a></li>
-                                </ul>                                
-                            </li>                        
-                            <li class="dropdown-submenu">
-                                <a href="javascript:void(0);">Footers</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="feature_footer_default.html#footer-default">Footer Default</a></li>
-                                    <li><a href="feature_footer_v1.html#footer-v1">Footer v1</a></li>
-                                    <li><a href="feature_footer_v2.html#footer-v2">Footer v2</a></li>
-                                    <li><a href="feature_footer_v3.html#footer-v3">Footer v3</a></li>
-                                    <li><a href="feature_footer_v4.html#footer-v4">Footer v4</a></li>
-                                    <li><a href="feature_footer_v5.html#footer-v5">Footer v5</a></li>
-                                    <li><a href="feature_footer_v6.html#footer-v6">Footer v6</a></li>
-                                    <li><a href="feature_footer_v7.html#footer-v7">Footer v7</a></li>
-                                </ul>                                
-                            </li>
-                            <li><a href="feature_gallery.html">Gallery Examples</a></li>
-                            <li><a href="feature_animations.html">Animations on Scroll</a></li>
-                            <li><a href="feature_parallax_counters.html">Parallax Counters</a></li>
-                            <li><a href="feature_parallax_blocks.html">Parallax Blocks</a></li>                                                       
-                            <li><a href="feature_funny_boxes.html">Funny Boxes</a></li>
-                        </ul>
-                    </li>                    
-                    <!-- End Features -->
-
-                    <!-- Shortcodes -->
-                    <li class="dropdown mega-menu-fullwidth">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            关于我们
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="mega-menu-content disable-icons">
-                                    <div class="container">
-                                        <div class="row equal-height">
-                                            <div class="col-md-3 equal-height-in">
-                                                <ul class="list-unstyled equal-height-list">
-                                                    <li><h3>Typography &amp; Components</h3></li>
-
-                                                    <!-- Typography -->
-                                                    <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i> General Typography</a></li>
-                                                    <li><a href="shortcode_typo_headings.html"><i class="fa fa-magic"></i> Headings Options</a></li>
-                                                    <li><a href="shortcode_typo_dividers.html"><i class="fa fa-ellipsis-h"></i> Dividers</a></li>
-                                                    <li><a href="shortcode_typo_blockquote.html"><i class="fa fa-quote-left"></i> Blockquote Blocks</a></li>
-                                                    <li><a href="shortcode_typo_boxshadows.html"><i class="fa fa-asterisk"></i> Box Shadows</a></li>
-                                                    <li><a href="shortcode_typo_testimonials.html"><i class="fa fa-comments"></i> Testimonials</a></li>
-                                                    <li><a href="shortcode_typo_tagline_boxes.html"><i class="fa fa-tasks"></i> Tagline Boxes</a></li>
-                                                    <li><a href="shortcode_typo_grid.html"><i class="fa fa-align-justify"></i> Grid Layouts</a></li>
-                                                    <!-- End Typography -->
-                                                    
-                                                    <!-- Components -->
-                                                    <li><a href="shortcode_compo_messages.html"><i class="fa fa-comment"></i> Alerts &amp; Messages</a></li>
-                                                    <li><a href="shortcode_compo_labels.html"><i class="fa fa-tags"></i> Labels &amp; Badges</a></li>
-                                                    <li><a href="shortcode_compo_media.html"><i class="fa fa-volume-down"></i> Audio/Videos &amp; Images</a></li>
-                                                    <li><a href="shortcode_compo_pagination.html"><i class="fa fa-arrows-h"></i> Paginations</a></li>
-                                                    <!-- End Components -->
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3 equal-height-in">
-                                                <ul class="list-unstyled equal-height-list">                                                    
-                                                    <li><h3>Buttons &amp; Icons</h3></li>
-                                                
-                                                    <!-- Buttons -->
-                                                    <li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i> General Buttons</a></li>
-                                                    <li><a href="shortcode_btn_brands.html"><i class="fa fa-html5"></i> Brand &amp; Social Buttons</a></li>
-                                                    <li><a href="shortcode_btn_effects.html"><i class="fa fa-bolt"></i> Loading &amp; Hover Effects</a></li>
-                                                    <!-- End Buttons -->
-                                                    
-                                                    <!-- Icons -->
-                                                    <li><a href="shortcode_icon_general.html"><i class="fa fa-chevron-circle-right"></i> General Icons</a></li>
-                                                    <li><a href="shortcode_icon_fa.html"><i class="fa fa-chevron-circle-right"></i> Font Awesome Icons</a></li>
-                                                    <li><a href="shortcode_icon_line.html"><i class="fa fa-chevron-circle-right"></i> Line Icons</a></li>
-                                                    <li><a href="shortcode_icon_glyph.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons Icons (Bootstrap)</a></li>
-                                                    <li><a href="shortcode_icon_glyph_pro.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons Icons Pro</a></li>  
-                                                    <!-- End Icons -->
-                                                </ul>                                
-                                            </div>
-                                            <div class="col-md-3 equal-height-in">
-                                                <ul class="list-unstyled equal-height-list">
-                                                    <li><h3>Common elements</h3></li>
-
-                                                    <!-- Content Boxes -->
-                                                    <li><a href="shortcode_box_general.html"><i class="fa fa-cog"></i> General Content Boxes</a></li>
-                                                    <li><a href="shortcode_box_colored.html"><i class="fa fa-align-center"></i> Colored Boxes</a></li>
-                                                    <li><a href="shortcode_thumbnails.html"><i class="fa fa-image"></i> Thumbnails</a></li>
-                                                    <li><a href="shortcode_accordion_and_tabs.html"><i class="fa fa-list-ol"></i> Accordion &amp; Tabs</a></li>
-                                                    <li><a href="shortcode_timeline1.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 1</a></li>
-                                                    <li><a href="shortcode_timeline2.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 2</a></li>
-                                                    <li><a href="shortcode_table_general.html"><i class="fa fa-table"></i> Tables</a></li>
-                                                    <li><a href="shortcode_compo_progress_bars.html"><i class="fa fa-align-left"></i> Progress Bars</a></li>
-                                                    <li><a href="shortcode_compo_panels.html"><i class="fa fa-columns"></i> Panels</a></li>
-                                                    <!-- End Common Elements -->
-                                                </ul>    
-                                            </div>
-                                            <div class="col-md-3 equal-height-in">
-                                                <ul class="list-unstyled equal-height-list">
-                                                    <li><h3>Forms &amp; Infographics</h3></li>
-
-                                                    <!-- Forms -->
-                                                    <li><a href="shortcode_form_general.html"><i class="fa fa-bars"></i> Common Bootstrap Forms</a></li>
-                                                    <li><a href="shortcode_form_general1.html"><i class="fa fa-bars"></i> General Unify Forms</a></li>
-                                                    <li><a href="shortcode_form_advanced.html"><i class="fa fa-bars"></i> Advanced Forms</a></li>
-                                                    <li><a href="shortcode_form_layouts.html"><i class="fa fa-bars"></i> Form Layouts</a></li>
-                                                    <li><a href="shortcode_form_layouts_advanced.html"><i class="fa fa-bars"></i> Advanced Layout Forms</a></li>
-                                                    <li><a href="shortcode_form_states.html"><i class="fa fa-bars"></i> Form States</a></li>
-                                                    <li><a href="shortcode_form_sliders.html"><i class="fa fa-bars"></i> Form Sliders</a></li>
-                                                    <li><a href="shortcode_form_modals.html"><i class="fa fa-bars"></i> Modals</a></li>
-                                                    <!-- End Forms -->
-                                                    
-                                                    <!-- Infographics -->
-                                                    <li><a href="shortcode_carousels.html"><i class="fa fa-sliders"></i> Carousel Examples</a></li>
-                                                    <li><a href="shortcode_compo_charts.html"><i class="fa fa-pie-chart"></i> Charts &amp; Countdowns</a></li>
-                                                    <li><a href="shortcode_maps_google.html"><i class="fa fa-map-marker"></i> Google Maps</a></li>
-                                                    <li><a href="shortcode_maps_vector.html"><i class="fa fa-align-center"></i> Vector Maps</a></li>
-                                                    <!-- End Infographics -->
-                                                </ul>                                
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>    
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- End Shortcodes -->
-
-                    <!-- Misc Pages -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            Misc
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="page_misc_blank.html">Blank page</a></li>
-                            <li><a href="page_misc_boxed.html">Boxed Page</a></li>
-                            <li><a href="page_misc_boxed_img.html">Boxed Image Page</a></li>
-                            <li><a href="page_misc_boxed_fixed_header.html">Boxed Fixed Menu</a></li>
-                            <li><a href="page_misc_fixed_header.html">Fixed Menu</a></li>
-                            <li><a href="page_misc_dark.html">Dark Page</a></li>
-                            <li><a href="page_misc_dark_boxed.html">Dark Boxed Page</a></li>
-                            <li><a href="page_misc_dark_other_color.html">Dark Page with Theme Color</a></li>
-                            <li><a href="page_misc_sticky_footer.html">Sticky Footer Example</a></li>
-                        </ul>
-                    </li>                    
-                    <!-- End Misc Pages -->
-
-                    <!-- Search Block -->
-                    <li>
-                        <i class="search fa fa-search search-btn"></i>
-                        <div class="search-open">
-                            <div class="input-group animated fadeInDown">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="input-group-btn">
-                                    <button class="btn-u" type="button">Go</button>
-                                </span>
-                            </div>
-                        </div>    
-                    </li>
-                    <!-- End Search Block -->
-                </ul>
-            </div><!--/end container-->
-        </div><!--/navbar-collapse-->
-    </div>
-    <!--=== End Header ===-->
-
-    <!--=== Slider ===-->
+<!--=== Slider ===-->
     <div class="slider-inner">
         <div id="da-slider" class="da-slider">
             <div class="da-slide">
@@ -404,7 +31,7 @@
     <!--=== End Slider ===-->
 
     <!--=== Purchase Block ===-->
-    <!-- <div class="purchase">
+     <div class="purchase">
         <div class="container">
             <div class="row">
                 <div class="col-md-9 animated fadeInLeft">
@@ -412,57 +39,57 @@
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.</p>
                 </div>            
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="#" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
+                    <a href="{% url 'upload'%}" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Upload Now</a>
                 </div>
             </div>
         </div>
-    </div> --><!--/row-->
+    </div> --><!--/row
     <!-- End Purchase Block -->
 
     <!--=== Content Part ===-->
     <div class="container content-sm">
-    	<!-- Service Blocks -->
-    	<div class="row margin-bottom-30">
-        	<div class="col-md-4">
-        		<div class="service">
+        <!-- Service Blocks -->
+        <div class="row margin-bottom-30">
+            <div class="col-md-4">
+                <div class="service">
                     <i class="fa fa-compress service-icon"></i>
-        			<div class="desc">
-        				<h4>满分团队</h4>
+                    <div class="desc">
+                        <h4>满分团队</h4>
                         <p>SpeakHub团队核心成员来自耶鲁牛津卡耐基梅隆等海外名校，熟知从托福考试到留学申请的各个环节。</p>
-        			</div>
-        		</div>	
-        	</div>
-        	<div class="col-md-4">
-        		<div class="service">
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="service">
                     <i class="fa fa-cogs service-icon"></i>
-        			<div class="desc">
-        				<h4>专属工具</h4>
+                    <div class="desc">
+                        <h4>专属工具</h4>
                         <p>SpeakHub团队为学员开发最高效的学习工具，甄选最地道学习素材，为学员打造高效学习环境。</p>
-        			</div>
-        		</div>	
-        	</div>
-        	<div class="col-md-4">
-        		<div class="service">
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="service">
                     <i class="fa fa-rocket service-icon"></i>
-        			<div class="desc">
-        				<h4>独特体验</h4>
+                    <div class="desc">
+                        <h4>独特体验</h4>
                         <p>SpeakHub培训项目采用严苛的淘汰机制，保证最高效的交流和学习效果，一鼓作气，短时间突破口语学习的瓶颈。</p>
-        			</div>
-        		</div>	
-        	</div>			    
-    	</div>
-    	<!-- End Service Blokcs -->
+                    </div>
+                </div>  
+            </div>              
+        </div>
+        <!-- End Service Blokcs -->
 
-    	<!-- Recent Works -->
+        <!-- Recent Works -->
         <div class="headline"><h2>服务项目</h2></div>
         <div class="row margin-bottom-20">
             <div class="col-md-3 col-sm-6">
                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                	<div class="thumbnail-img">
+                    <div class="thumbnail-img">
                         <div class="overflow-hidden">
                             <img class="img-responsive" src="{% static "img/main/img1.jpg"%}" alt="">
                         </div>
-                        <a class="btn-more hover-effect" href="#">read more +</a>					
+                        <a class="btn-more hover-effect" href="#">read more +</a>                   
                     </div>
                     <div class="caption">
                         <h3><a class="hover-effect" href="#">托福口语锻造小组</a></h3>
@@ -513,13 +140,13 @@
                 </div>
             </div>
         </div>
-    	<!-- End Recent Works -->
+        <!-- End Recent Works -->
 
-    	<!-- Info Blokcs -->
-    	<div class="row margin-bottom-30">
-        	<!-- Welcome Block -->
-    		<div class="col-md-8 md-margin-bottom-40">
-    			<div class="headline"><h2>学员反馈</h2></div>
+        <!-- Info Blokcs -->
+        <div class="row margin-bottom-30">
+            <!-- Welcome Block -->
+            <div class="col-md-8 md-margin-bottom-40">
+                <div class="headline"><h2>学员反馈</h2></div>
                 <div class="row">
                     <div class="col-sm-4">
                         <img class="img-responsive margin-bottom-20" src="{% static "img/main/img18.jpg"%}" alt="">
@@ -543,8 +170,8 @@
 
             <!-- Latest Shots -->
             <div class="col-md-4">
-    			<div class="headline"><h2>学员故事</h2></div>
-    			<div id="myCarousel" class="carousel slide carousel-v1">
+                <div class="headline"><h2>学员故事</h2></div>
+                <div id="myCarousel" class="carousel slide carousel-v1">
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="{% static "img/main/img4.jpg"%}" alt="">
@@ -574,10 +201,10 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
-    			</div>
+                </div>
             </div><!--/col-md-4-->
-    	</div>	
-    	<!-- End Info Blokcs -->
+        </div>  
+        <!-- End Info Blokcs -->
 
         <!-- Owl Clients v1 -->
         <div class="headline"><h2>Our Clients</h2></div>        
@@ -614,156 +241,5 @@
     </div><!--/container-->
     <!-- End Content Part -->
 
-    <!--=== Footer Version 1 ===-->
-    <div class="footer-v1">
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <!-- About -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="{% static "img/logo2-default.png"%}" alt=""></a>
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
-                    </div><!--/col-md-3-->
-                    <!-- End About -->
+{% endblock %}
 
-                    <!-- Latest -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="posts">
-                            <div class="headline"><h2>Latest Posts</h2></div>
-                            <ul class="list-unstyled latest-list">
-                                <li>
-                                    <a href="#">Incredible content</a>
-                                    <small>May 8, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">Best shoots</a>
-                                    <small>June 23, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">New Terms and Conditions</a>
-                                    <small>September 15, 2014</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/col-md-3-->  
-                    <!-- End Latest --> 
-                    
-                    <!-- Link List -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>Useful Links</h2></div>
-                        <ul class="list-unstyled link-list">
-                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                        </ul>
-                    </div><!--/col-md-3-->
-                    <!-- End Link List -->                    
-
-                    <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>                         
-                        <address class="md-margin-bottom-40">
-                            25, Lorem Lis Street, Orange <br />
-                            California, US <br />
-                            Phone: 800 123 3456 <br />
-                            Fax: 800 123 3456 <br />
-                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-                        </address>
-                    </div><!--/col-md-3-->
-                    <!-- End Address -->
-                </div>
-            </div> 
-        </div><!--/footer-->
-
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">                     
-                        <p>
-                            2015 &copy; All Rights Reserved.
-                           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="col-md-6">
-                        <ul class="footer-socials list-inline">
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-                                    <i class="fa fa-skype"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-                                    <i class="fa fa-dribbble"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
-                </div>
-            </div> 
-        </div><!--/copyright-->
-    </div>
-    <!--=== End Footer Version 1 ===-->
-</div><!--/wrapper-->
-
-<!-- JS Global Compulsory -->			
-<script type="text/javascript" src="{% static "plugins/jquery/jquery.min.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/jquery/jquery-migrate.min.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/bootstrap/js/bootstrap.min.js"%}"></script>
-<!-- JS Implementing Plugins -->
-<script type="text/javascript" src="{% static "plugins/back-to-top.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/smoothScroll.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/parallax-slider/js/modernizr.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/parallax-slider/js/jquery.cslider.js"%}"></script>
-<script type="text/javascript" src="{% static "plugins/owl-carousel/owl-carousel/owl.carousel.js"%}"></script>
-<!-- JS Customization -->
-<script type="text/javascript" src="{% static "js/custom.js"%}"></script>
-<!-- JS Page Level -->           
-<script type="text/javascript" src="{% static "js/app.js"%}"></script>
-<script type="text/javascript" src="{% static "js/plugins/owl-carousel.js"%}"></script>
-<script type="text/javascript" src="{% static "js/plugins/parallax-slider.js"%}"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-      	App.init();
-        OwlCarousel.initOwlCarousel();        
-        ParallaxSlider.initParallaxSlider();
-    });
-</script>
-<!--[if lt IE 9]>
-    <script src="assets/plugins/respond.js"></script>
-    <script src="assets/plugins/html5shiv.js"></script>
-    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
-
-</body>
-</html>
